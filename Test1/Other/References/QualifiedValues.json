@@ -1,0 +1,28 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_account_forms",
+      "Namespace": "Accounts (Forms)",
+      "Values": {
+        "Account": "8448b78f-8f42-454e-8e2a-f8196b0419af",
+        "account card": "b028db32-3619-48a5-ac51-cf3f947b0ef3",
+        "Account Card form": "cccff382-2b92-467e-bf1b-3db179512af8",
+        "Account for Interactive experience": "a72c7955-442b-4ea4-9499-b10cd18b4256",
+        "Account for Multisession experience": "ff49442f-8c60-4877-bdae-8fe51e6f4636",
+        "Account Hierarchy Tile Form": "69cff312-cfb6-4289-9631-249ab85d2c62",
+        "Account Quick Create": "c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b",
+        "Account Reference Panel": "098ae145-1567-41ec-8398-86dbaac70c9b",
+        "Accounts Dashboard": "15915835-b87c-49ec-9ffc-bfac3ac44ef1",
+        "Accounts Nextgen": "f539efc1-8f09-43c1-b7d9-fe0b4eed6bf0",
+        "App for Outlook Account Card": "fb65cc73-181c-468b-9bb3-82ecde306991",
+        "App for Outlook Account Quick View": "76b81f10-2a08-4f1a-9454-ee38bea94eb5",
+        "In Context Form": "face3aa6-99c4-4b7e-af07-55f121cdca86",
+        "Information": "b053a39a-041a-4356-acef-ddf00182762b",
+        "Quick Create Account - Janani": "f418917a-0a33-4a94-8a70-f41645c8a785",
+        "Recent Cases and Entitlements": "43300723-f867-420b-ab28-976a4d12e6c4",
+        "Sales Insights": "cb430327-bcc1-416d-959d-db7592e685af",
+        "Social Profiles": "2205c86d-ed88-4a2f-a447-3b86a8781f2e"
+      }
+    }
+  ]
+}

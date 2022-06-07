@@ -1,0 +1,117 @@
+Screen1 As screen:
+    OnVisible: |-
+        =Collect(
+            ProductList,
+            {
+                Product: "ASDF",
+                ProductName: "ASDF Name",
+                Color: "Red"
+            }
+        );
+        Collect(
+            ProductList,
+            {
+                Product: "ASDF",
+                ProductName: "ASDF Name",
+                Color: "Green"
+            }
+        );
+        Collect(
+            ProductList,
+            {
+                Product: "ASDF",
+                ProductName: "ASDF Name",
+                Color: "Blue"
+            }
+        )
+
+    Timer2 As timer:
+        AutoPause: =false
+        Duration: =8000
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =17.14
+        Start: =startTimer
+        Width: =210.84
+        X: =79.07
+        Y: =39
+        ZIndex: =2
+
+    Button1 As button:
+        OnSelect: |-
+            =UpdateContext({startTimer:false});Reset(Timer2);UpdateContext({startTimer:true});
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =19.76
+        Text: ="Start"
+        Width: =210.84
+        X: =361.06
+        Y: =39
+        ZIndex: =3
+
+    Button2 As button:
+        OnSelect: |-
+            =UpdateContext({startTimer:false});
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =19.76
+        Text: ="Stop"
+        Width: =210.84
+        X: =629.87
+        Y: =39
+        ZIndex: =4
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: =ProductList
+        Size: =17.14
+        Width: =1054.18
+        X: =71.16
+        Y: =119
+        ZIndex: =5
+
+        Product_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Product"
+            FieldName: ="Product"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Product
+            Width: =347.88
+            X: =0.00
+            Y: =0
+            ZIndex: =1
+
+        ProductName_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ProductName"
+            FieldName: ="ProductName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.ProductName
+            Width: =347.88
+            X: =347.88
+            Y: =0
+            ZIndex: =2
+
+        Color_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Color"
+            FieldName: ="Color"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Color
+            Width: =347.88
+            X: =695.76
+            Y: =0
+            ZIndex: =3
+

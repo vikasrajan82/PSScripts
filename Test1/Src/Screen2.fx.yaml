@@ -1,0 +1,126 @@
+Screen2 As screen:
+    OnVisible: |-
+        =UpdateContext({collapsedMenuWidth:48});UpdateContext({expandedMenuWidth:270});UpdateContext({leftMenuWidth:collapsedMenuWidth});
+
+    Label1 As label:
+        Fill: =RGBA(51, 51, 51, 1)
+        Height: =48
+        PaddingRight: =6.59
+        PaddingTop: =6.59
+        Size: =17.14
+        Text: =""
+        Width: =1800.00
+        X: =0.00
+        ZIndex: =1
+
+    Image1 As image:
+        Height: =20
+        Image: =MS
+        Width: =20
+        X: =14
+        Y: =14
+        ZIndex: =2
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =11
+        Text: ="Device Pricing Configuration Center"
+        Width: =338
+        X: =50
+        ZIndex: =3
+
+    Label3 As label:
+        Fill: =RGBA(51, 51, 51, 1)
+        Height: =App.Height-Label1.Height
+        Text: =""
+        Width: =leftMenuWidth
+        Y: =Label1.Y+Label1.Height
+        ZIndex: =4
+
+    grpCollapseMenuButton As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =7
+
+        Image2 As image:
+            Height: =48
+            Image: =Expand
+            OnSelect: =
+            Width: =48
+            Y: =48
+            ZIndex: =5
+
+        Button4 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Image2.Height
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: |
+                =If(
+                    Label3.Width = collapsedMenuWidth,
+                    UpdateContext({leftMenuWidth: expandedMenuWidth}),
+                    UpdateContext({leftMenuWidth: collapsedMenuWidth})
+                );
+            PressedBorderColor: =
+            PressedFill: =
+            Text: =""
+            Width: =Image2.Width
+            X: =Image2.X
+            Y: =Image2.Y
+            ZIndex: =6
+
+    grpHomeMenuButton As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =10
+
+        Image2_1 As image:
+            Height: =48
+            Image: =Home
+            OnSelect: =
+            Tooltip: ="Home"
+            Width: =48
+            X: =Button4.X
+            Y: =Button4.Y+Button4.Height
+            ZIndex: =7
+
+        Button4_1 As button:
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Image2_1.Height
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: |
+                =If(
+                    Label3.Width = collapsedMenuWidth,
+                    UpdateContext({leftMenuWidth: expandedMenuWidth}),
+                    UpdateContext({leftMenuWidth: collapsedMenuWidth})
+                );
+            PressedBorderColor: =
+            PressedFill: =
+            Text: =""
+            Tooltip: ="Home"
+            Width: =Image2_1.Width
+            X: =Button4.X
+            Y: =Button4.Y+Button4.Height
+            ZIndex: =8
+
+        Label5 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 0)
+            Size: =10
+            Text: ="Home"
+            Tooltip: ="Home"
+            X: =Button4_1.X+Button4_1.Width
+            Y: =Button4_1.Y+5
+            ZIndex: =9
+
