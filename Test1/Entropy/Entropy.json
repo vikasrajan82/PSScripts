@@ -15,8 +15,8 @@
     "Image2_1": 18,
     "Label1": 12,
     "Label2": 13,
-    "Label3": 15,
     "Label5": 20,
+    "lblScreen2": 15,
     "Product_Column1": 8,
     "ProductName_Column1": 9,
     "Screen1": 3,
@@ -25,7 +25,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/07/2022 15:29:05",
+  "HeaderLastSavedDateTimeUTC": "06/07/2022 15:30:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "a500a366-177b-43f3-879e-c675b6eb9f12": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/e5bda7485c784d169e738fc61200a8f5\""
@@ -124,8 +124,8 @@
     "Image2_1": 7,
     "Label1": 0,
     "Label2": 1,
-    "Label3": 3,
     "Label5": 10,
+    "lblScreen2": 3,
     "Product_Column1": 15,
     "ProductName_Column1": 16,
     "Screen1": 0,

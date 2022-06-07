@@ -31,7 +31,7 @@ Screen2 As screen:
         X: =50
         ZIndex: =3
 
-    Label3 As label:
+    lblScreen2 As label:
         Fill: =RGBA(51, 51, 51, 1)
         Height: =App.Height-Label1.Height
         Text: =""
@@ -63,7 +63,7 @@ Screen2 As screen:
             HoverFill: =
             OnSelect: |
                 =If(
-                    Label3.Width = collapsedMenuWidth,
+                    lblScreen2.Width = collapsedMenuWidth,
                     UpdateContext({leftMenuWidth: expandedMenuWidth}),
                     UpdateContext({leftMenuWidth: collapsedMenuWidth})
                 );
@@ -101,7 +101,7 @@ Screen2 As screen:
             HoverFill: =
             OnSelect: |
                 =If(
-                    Label3.Width = collapsedMenuWidth,
+                    lblScreen2.Width = collapsedMenuWidth,
                     UpdateContext({leftMenuWidth: expandedMenuWidth}),
                     UpdateContext({leftMenuWidth: collapsedMenuWidth})
                 );
